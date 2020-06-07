@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LandingPage</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300;700;900&display=swap" rel="stylesheet">
+	<style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            background-image: url("img/fondo.svg");
+        }
+
+        .contenedor{
+            display:flex;
+            background: white;
+            width: 70wh;
+            overflow: hidden;
+            box-shadow: grey;
+            box-shadow: 0 50px 50px rgb(76, 107, 116);
+            margin: 10em 5em 10em 5em;
+            flex-direction: row;
+
+        }
+
+        .texto {
+            display:grid;
+            grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 0fr;
+            padding: 1em 2em 2em 1em;
+            margin: 2em;
+            width: 45%;
+            height: 75vh;
+        }
+
+        .img {
+            
+          
+			padding: 1em 2em 2em 1em;
+			margin: 2em;
+        }
+
+        .img img {
+            width: auto;
+            object-fit: cover;
+            object-position: bottom;
+			padding-top: 4em;
+   
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+
+        .learn {
+            display: flex;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4em;
+            align-content: center;
+            align-items: center;
+            background: #CE663D;
+			color: white;
+			text-transform: uppercase;
+            font-weight: 700;
+            border-radius: 50px;
+            padding: 0.5em;
+			padding-left: 1em;
+    		padding-right: 1em;
+            width: fit-content;
+			letter-spacing: 2px;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 3.5em;
+            padding-top: 100px;
+			padding-bottom: 0.5em;
+        }
+		
+		.subtitle{
+			font-family: 'Poppins', sans-serif;
+			font-weight: 300;
+			padding-top: 0px;
+			
+		}
+
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            font-size: 2em;
+            padding-bottom: 0.3em;
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+            font-weight: 300;
+            font-size: 1em;
+            line-height: 2em;
+            padding-bottom: 20px;
+        }
+		#menu {
+ padding: 0;
+ }
+		#menu li{
+			display: inline;
+			font-family: 'Poppins', sans-serif;
+			font-weight: 700;
+			font-size: 1.2em;
+			
+		}
+		#menu li a{
+			color: black;
+			text-decoration: none;
+			padding: 1em 0.2em;
+		}
+
+        @media (max-width:1200px){
+            
+            .contenedor {
+                font-size: 13px;
+                width: 80%;
+                height: 60vh;
+                margin: 2em;
+            }
+
+            .img {
+                height: 60vh;
+				
+            }
+
+            .img img {
+                height: 60vh;
+            }
+
+            .texto {
+                height: 55vh;
+            }
+
+            @media (max-width:1100px) {
+                .contenedor {
+                    font-size: 12px;
+                    width: 90%;
+                    height: 50vh;
+                    margin: 1em;
+                }
+
+                .img img {
+                    height: 40vh;
+                    position: relative;
+                                }
+
+                .texto {
+                    height: 35vh;
+                }
+
+                .img {
+                    height: 40vh;
+                }
+                 @media (max-width:850px) {
+                .contenedor {
+                    font-size: 12px;
+                    width: 90%;
+                    height: 70vh;
+                    margin: 1em;
+                }
+
+                .img img {
+                    height: 60vh;
+                    position: relative;
+                                }
+
+                .texto {
+                    height: 35vh;
+                }
+
+                .img {
+                    height: 40vh;
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="texto">
+            <h1>YOUR LOGO</h1>
+			
+          <h2>APPOINMENT
+			  <span class="subtitle">BOOKING</span></h2>
+			<h3>Lorem ipsum dolor </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, fugiat. Nam vel, enim atque illum. Neque ratione, libero. Minima suscipit quos fuga, doloribus dolore ad ab dolorum dicta eum, explicabo.</p>
+            
+          <div class="learn">Learn more ></div>
+      </div>
+        <div class="img">
+			<ul id="menu">
+ 				<li><a href="#">HOME</a></li>
+ 				<li><a href="#">OUR TEAM</a></li>
+ 				<li><a href="#">SERVICES</a></li>
+ 				<li><a href="#">CONTACT</a></li>
+ 			</ul>
+            <img alt="imagen" src="img/imagen.svg">
+        </div>
+    </div>
+</body>
+</html>
